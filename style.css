@@ -131,7 +131,9 @@ list-style: none;
     transition: all 0.5s;
 
 }
-
+.hamburger i{
+    display: none;
+}
 
 .navigation li:hover{
     color: var(--color-orange);
@@ -382,3 +384,16 @@ ul span{
     align-items: center;
     font-size: 2rem;
 }
+/* --------mobile */
+@media(max-width:842px){
+    
+   .menu-icon{
+        display: inline-block;
+        position: relative;
+    
+    }
+
+    .navigation{
+        flex-direction: column;
+    }
+    }
