@@ -385,7 +385,7 @@ ul span{
     font-size: 2rem;
 }
 /* --------mobile */
-@media(max-width:842px){
+@media(max-width:700px){
     
    .menu-icon{
         display: inline-block;
@@ -396,4 +396,100 @@ ul span{
     .navigation{
         flex-direction: column;
     }
+    .hero{
+        background-color: var(--color-orange);
+        padding: 0 2rem;
+        display: grid;
+        grid-template-areas: "left"
+        "right";
+        
     }
+    .hero-section{
+        padding-top: 7rem;
+       color: var(--body-bg);
+    }
+    .left{
+        grid-area: left;
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    margin-top: 10rem;
+    }
+    .left .name{
+        font-size: 2.5rem;
+        font-weight: Bold;
+    }
+    .left .tag{
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+    .left button{
+        padding: 0.8rem 1.2rem;
+        border: none;
+        background: black;
+        color: var(--body-bg);
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+    .left button i{
+        color: var(--color-orange);
+    }
+    .right{
+        grid-area: right;
+       
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .right img{
+        height: 80%;
+       
+    }
+    .about{
+        padding-top: 7rem;
+      
+    }
+    .about-content{
+        margin-top: 4rem;
+        gap:3rem;
+      
+    }
+    .about-content .myimg{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .about-content .myimg img{
+      max-width :200px;
+    }
+    .mybio h2{
+        font-size:2rem;
+        margin-bottom: 3rem;
+    }
+    .mybio p:nth-child(5){
+    font-weight: bolder;
+    margin: 2rem, 0;
+    }
+    .mybio .tag{
+    font-weight: bolder;
+    }
+    .mybio .tag + div {
+    padding: 1rem;
+    }
+    .mybio .tag + div span{
+        padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    }
+    
+    
+    .mybio .tag + div span:hover{
+    background-color: grey;
+    cursor: pointer;
+    }
+    
+}
